@@ -39,7 +39,7 @@ clear.addEventListener('click', () => { //on the click event an arrow function c
 
 
 
-
+// Make grid function and it's helper functions
 function makeGrid(size) {
 
   removeAllChildNodes(grid) // clears grid so when user changes grid size, the new specified grid doesnt get appended to
@@ -66,6 +66,10 @@ function removeAllChildNodes(parent) {
   while(parent.firstChild)
     parent.removeChild(parent.firstChild)
 }
+// ***********************************************
+
+
+
 
 // Adds functionality to buttons
 const red = document.getElementById('red')
@@ -80,10 +84,10 @@ blue.addEventListener('click', handleClick)
 function handleClick(event) {
   color = event.target.id
 }
+// ***********************************************
 
 
 
-//reset button functionality and change color options
 
 
 
