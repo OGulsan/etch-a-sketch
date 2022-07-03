@@ -81,8 +81,17 @@ black.addEventListener('click', handleClick)
 const blue = document.getElementById('blue')
 blue.addEventListener('click', handleClick)
 
+const random = document.getElementById('random')
+random.addEventListener('click', handleClickRandom)
+
 function handleClick(event) {
   color = event.target.id
+}
+
+function handleClickRandom() {
+  const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+  color = colors[Math.floor(Math.random() * colors.length)]
+  console.log(color)
 }
 // ***********************************************
 
