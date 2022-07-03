@@ -89,7 +89,9 @@ function handleClick(event) {
 }
 
 function handleClickRandom() {
-  const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+  const colors = ['Pink', 'HotPink', 'MediumVioletRed', 'Lavender', 'Orchid', 'Fuchsia', 'DarkViolet', 'Purple', 'SlateBlue',
+'LightSalmon', 'FireBrick', 'Tomato', 'Coral', 'Yellow', 'Gold', 'Lawn Green', 'Lime', 'Green', 'SeaGreen', 'Teal', 'Aquamarine', 'Cyan',
+'DeepSkyBlue', 'SlateGray'] //List of my favorite CSS colors
   color = colors[Math.floor(Math.random() * colors.length)]
   console.log(color)
 }
