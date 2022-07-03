@@ -1,5 +1,5 @@
-:root {
-    --grid-columns: 1;
+:root { /* given to root selector so that it's scope is available globally */
+    --grid-columns: 1; /* Custom variable to be used to set grid size */
     --grid-rows: 1;
 }
 
@@ -7,8 +7,8 @@
     display: grid;
     width: 560px;
     height: 560px;
-    grid-template-rows: repeat(var(--grid-rows),1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);  
+    grid-template-rows: repeat(var(--grid-rows),1fr); /* adds '--grid-rows' amount of equal rows */
+    grid-template-columns: repeat(var(--grid-cols), 1fr);  /* adds '--grid-columns' amount of equal columns */
     background: #eeee;
     border: 1px solid black;
 }
@@ -17,4 +17,10 @@
     border: 1px solid black;
     text-align: center;  
         
+}
+
+input {
+    width: 213px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
