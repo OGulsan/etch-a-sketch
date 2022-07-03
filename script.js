@@ -1,12 +1,18 @@
+// Establishes basic variables and initializes grid to default size of 16x16
 const grid = document.querySelector(".grid");
 let size = 16;
+let color = "black"
 makeGrid(size)
+// ***********************************************
+
+
+
 
 // Changes grid size based on user input
 const userSize = document.getElementById('size');
 userSize.addEventListener('change', handleInput)
+
 function handleInput(event) {
-  //need to validate input
   size = event.target.value;
   if(validateInput(size))
     makeGrid(size);
@@ -19,14 +25,20 @@ function validateInput(size) {
   }
   return true;
 }
+// ***********************************************
 
 
 
 
+// Grab clear button and implement functionality to it
+const clear = document.getElementById('clear');
+clear.addEventListener('click', () => { //on the click event an arrow function calls the make grid function and clears the grid
+  makeGrid(size)
+})
+// ***********************************************
 
-function clearGrid() {
 
-}
+
 
 function makeGrid(size) {
 
@@ -44,8 +56,9 @@ function makeGrid(size) {
 
 };
 
+
 function handleHover(event) {
-  event.target.style.backgroundColor = "black"
+  event.target.style.backgroundColor = color
 
 }
 
@@ -54,7 +67,23 @@ function removeAllChildNodes(parent) {
     parent.removeChild(parent.firstChild)
 }
 
+// Adds functionality to buttons
+const red = document.getElementById('red')
+red.addEventListener('click', handleClick)
 
+const black = document.getElementById('black')
+black.addEventListener('click', handleClick)
+
+const blue = document.getElementById('blue')
+blue.addEventListener('click', handleClick)
+
+function handleClick(event) {
+  color = event.target.id
+}
+
+
+
+//reset button functionality and change color options
 
 
 
