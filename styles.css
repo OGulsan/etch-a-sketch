@@ -3,8 +3,30 @@
     --grid-rows: 1;
 }
 
+button, h1, input, footer {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
 body {
     background-color: aliceblue;
+}
+
+button {
+    border-radius: 8px;
+    
+}
+button:hover {
+    box-shadow: 5px 5px 6px 0 rgba(0,0,0,0.24)
+  }
+
+.button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.buttons {
+    padding: 5px;
 }
 
 .grid {
@@ -28,6 +50,10 @@ input {
     width: 213px;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .hero {
@@ -40,12 +66,28 @@ input {
 header {
     display: flex;
     justify-content: center;
+    
+    
 }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 0px;
     font-size: 60px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
     color: rgb(52, 192, 235);
     text-shadow: 1px 1px 3px blue;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    margin-top:20px;
+    margin-bottom: 0px;
+    padding-bottom:0px ;
+}
+
+a {
+    text-decoration: none;
+    
 }
