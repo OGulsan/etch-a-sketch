@@ -84,6 +84,9 @@ blue.addEventListener('click', handleClick)
 const random = document.getElementById('random')
 random.addEventListener('click', handleClickRandom)
 
+const eraser = document.querySelector('#eraser');
+eraser.addEventListener('click', () => color = "white");
+
 function handleClick(event) {
   color = event.target.id
 }
@@ -96,6 +99,8 @@ function handleClickRandom() {
   console.log(color)
 }
 // ***********************************************
+
+
 
 
 
