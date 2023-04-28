@@ -58,6 +58,10 @@ input {
     padding-bottom: 2px;
 }
 
+input:invalid {
+    border: solid red 4px;
+}
+  
 section {
     display: flex;
     flex-direction: column;
